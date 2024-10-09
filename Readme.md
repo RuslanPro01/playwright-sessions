@@ -5,28 +5,13 @@
 - Автоматическое заполнение формы на страницах, содержащих `/mobile/` в URL.
 - Интерактивные команды для перезапуска или закрытия браузеров.
 
-## Требования
-
-- **Node.js** (версии 14 и выше)
-- **NPM** или **Yarn**
-- **Зависимости**:
-    - `@playwright/test`
-    - `yargs`
-    - `@faker-js/faker`
-
 ## Установка
 
 1. **Клонируйте репозиторий** или скопируйте скрипт в свой проект.
 2. **Установите зависимости**, выполнив:
 
    ```bash
-   npm install \@playwright/test yargs \@faker-js/faker
-   ```
-
-   или
-
-   ```bash
-   yarn add \@playwright/test yargs \@faker-js/faker
+   npm install @playwright/test yargs @faker-js/faker
    ```
 
 ## Использование
@@ -57,19 +42,19 @@ node script.js [options]
 - **Запуск 4 мобильных сессий с настройками по умолчанию**:
 
   ```bash
-  node script.js
+  npm run launch
   ```
 
 - **Запуск 2 сессий на десктопе с разрешением 800x600**:
 
   ```bash
-  node script.js -s 2 -m false -w 800 -h 600
+  npm run launch -- -s 2 -m false -w 800 -h 600
   ```
 
 - **Запуск сессий с пользовательским URL**:
 
   ```bash
-  node script.js -u 'https://example.com'
+  npm run launch -- -s 3 -m -u https://example.ru/hnM
   ```
 
 ## Интерактивные команды

@@ -66,7 +66,6 @@ async function launchBrowsers() {
     const browser = await chromium.launch({
       headless: false,
       args: [
-        `--window-size=${width},${height}`,
         `--window-position=${xOffset},${yOffset}`,
       ],
     });
