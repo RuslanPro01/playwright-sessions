@@ -103,7 +103,8 @@ async function launchBrowsers() {
     if (data === 'r' || data === 'к') {
       console.log('Перезапуск браузеров...');
       await launchBrowsers();
-    } else if (data === 'q' || data === 'й') {
+    }
+    if (data === 'q' || data === 'й') {
       console.log('Закрытие браузеров...');
       for (const browser of browsers) {
         await browser.close();
