@@ -1,9 +1,10 @@
-const { Browser, chromium } = require('@playwright/test');
-const yargs = require('yargs');
-const { hideBin } = require('yargs/helpers');
-const { faker } = require('@faker-js/faker');
+import { Browser, chromium } from '@playwright/test';
+import yargs from 'yargs';
+import { hideBin } from 'yargs/helpers';
+import { faker } from '@faker-js/faker';
 
-const argv = yargs(hideBin(process.argv))
+
+const argv = await yargs(hideBin(process.argv))
   .option('sessions', {
     alias: 's',
     type: 'number',
@@ -49,7 +50,7 @@ const width = argv.width;
 const height = argv.height;
 const isMobile = argv.mobile;
 
-let browsers: typeof Browser[] = [];
+let browsers: Browser[] = [];
 
 async function launchBrowsers() {
   if (browsers.length > 0) {
