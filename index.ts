@@ -75,7 +75,6 @@ async function launchBrowsers() {
       isMobile: isMobile,
       acceptDownloads: true,
       bypassCSP: true,
-      screen: { width, height },
     };
 
     const context = await browser.newContext(contextOptions);
