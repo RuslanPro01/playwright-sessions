@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                         // Целевая версия JavaScript
+    "module": "ESNext",                         // Использование ES-модулей
+    "moduleResolution": "node",                 // Разрешение модулей как в Node.js
+    "esModuleInterop": true,                    // Совместимость с CommonJS модулями
+    "strict": true,                             // Включение строгого режима
+    "skipLibCheck": true,                       // Пропуск проверки типов в библиотеках
+    "forceConsistentCasingInFileNames": true,   // Принудительное использование одинаковых регистров в названиях файлов
+    "resolveJsonModule": true,                  // Возможность импорта JSON
+    "isolatedModules": true,                    // Для поддержки модулей
+    "allowSyntheticDefaultImports": true,       // Разрешить импорт по умолчанию
+    "noImplicitAny": false                      // Отключение строгой типизации для параметров с неявным типом `any`
+  },
+  "include": ["./**/*.ts"],                     // Включение всех файлов с расширением `.ts`
+  "exclude": ["node_modules"]                   // Исключение папки node_modules
+}
