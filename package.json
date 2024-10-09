@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "launch": "node --loader ts-node/esm index.ts"
+    "launch": "ts-node index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "type": "module",
+  "type": "commonjs",
   "devDependencies": {
     "@faker-js/faker": "9.0.3",
     "@playwright/test": "^1.47.1",
